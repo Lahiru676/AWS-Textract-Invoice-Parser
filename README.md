@@ -1,5 +1,7 @@
 # AWS-Textract-Invoice-Parser
 Extracts structured invoice data (header fields + line items) from PDFs and images using AWS Textract – AnalyzeExpense, with a FORMS fallback for missing headers. Handles multi-page invoices, merges page results, and prints a clean console report plus normalized JSON.
+
+
 ✨ What it does
 
 Accepts files from your local drive (.pdf, .jpg, .jpeg, .png)
@@ -20,6 +22,8 @@ Prints a pretty table to the console and writes:
 
 *_clean.json – final normalized object per assignment spec
 
+
+
 🧱 Project layout
 .
 ├─ main.py                 # Orchestrator / CLI
@@ -30,7 +34,7 @@ Prints a pretty table to the console and writes:
 └─ .env                    # Your configuration (not committed)
 
 
-Your instructor will grade API handling; that happens in client.py (S3 + Textract async APIs) and in main.py (orchestration).
+
 
 ⚙️ Requirements
 
@@ -44,42 +48,7 @@ textract:StartDocumentAnalysis, textract:GetDocumentAnalysis
 
 s3:PutObject, s3:GetObject on your bucket
 
-Install deps:
 
-python -m venv env
-# Windows:   env\Scripts\activate
-# macOS/Linux: source env/bin/activate
-pip install -r requirements.txt
-
-
-requirements.txt (create this file):
-
-boto3
-python-dotenv
-python-dateutil
-
-🔐 .env configuration
-
-Create a .env in the project root:
-
-# AWS & S3
-AWS_REGION=us-east-1
-S3_BUCKET=your-s3-bucket-name
-S3_PREFIX=invoices/          # optional; can be empty
-POLL_SECS=4                  # polling interval for async jobs (seconds)
-
-# Parsing defaults
-DEFAULT_CURRENCY=USD
-DATE_DAYFIRST=true           # parse day-first dates common outside US (true/false)
-
-# (Use standard AWS credentials chain: env vars, shared profile, or role)
-# Example (optional if you already configured AWS CLI/role):
-# AWS_ACCESS_KEY_ID=...
-# AWS_SECRET_ACCESS_KEY=...
-# AWS_SESSION_TOKEN=...
-
-
-Do not commit .env. Let your AWS credentials be picked up from your normal profile or role when possible.
 
 ▶️ Running
 
@@ -91,8 +60,6 @@ python main.py ./samples/invoice01.pdf ./samples/invoice05.png
 
 
 
-
-
 Artifacts saved next to your input:
 
 invoice_01.textract_raw.json
@@ -100,6 +67,8 @@ invoice_01.textract_raw.json
 invoice_01.parsed.json
 
 invoice_01_clean.json
+
+
 
 🔍 How it works (pipeline)
 
@@ -128,6 +97,10 @@ Sanitize & print
 sanitize_line_items() drops summary rows (Subtotal, Tax, etc.), fixes zero-qty noise, and computes missing fields only when they are actually missing (never overwriting values Textract provided).
 main.print_invoice_report() displays the table; utils.save_json() writes artifacts.
 
+
+
+
+
 📄 Supported inputs
 
 PDF (multi-page supported)
@@ -138,8 +111,4 @@ JPG / JPEG / PNG (single or multi-page image sets as separate files)
 
 🧩 Extending
 
-Add vendor-specific rules in expense_parser.py if a known template always mislabels headers.
 
-Emit CSV alongside JSON (e.g., one row per line item).
-
-Add S3 cleanup (optional) after processing.

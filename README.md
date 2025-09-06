@@ -2,7 +2,7 @@
 Extracts structured invoice data (header fields + line items) from PDFs and images using AWS Textract – AnalyzeExpense, with a FORMS fallback for missing headers. Handles multi-page invoices, merges page results, and prints a clean console report plus normalized JSON.
 
 
-✨ What it does
+## What it does
 
 Accepts files from your local drive (.pdf, .jpg, .jpeg, .png)
 
@@ -24,19 +24,26 @@ Prints a pretty table to the console and writes:
 
 
 
-🧱 Project layout
-.
+## Project layout
+
+
+
 ├─ main.py                 # Orchestrator / CLI
+
 ├─ client.py               # AWS clients, S3 upload, Textract job helpers
+
 ├─ expense_parser.py       # Parse AnalyzeExpense & FORMS; line-item logic
+
 ├─ aggregater.py           # Merge docs by invoice number (if used)
+
 ├─ utils.py                # Dates, currency/qty parsing, JSON utils, env helpers
+
 └─ .env                    # Your configuration (not committed)
 
 
 
 
-⚙️ Requirements
+## Requirements
 
 Python 3.9+ recommended
 
@@ -50,12 +57,12 @@ s3:PutObject, s3:GetObject on your bucket
 
 
 
-▶️ Running
+## Running
 
 Process one or more files from your local drive:
 
 python main.py "C:\path\to\invoice 01.pdf" "C:\path\to\invoice 05.pdf"
-# or
+or
 python main.py ./samples/invoice01.pdf ./samples/invoice05.png
 
 
@@ -70,7 +77,7 @@ invoice_01_clean.json
 
 
 
-🔍 How it works (pipeline)
+## How it works (pipeline)
 
 Local file → S3
 client.upload_local_*_to_s3() uploads the file with a unique key (prefix + UUID).
@@ -101,7 +108,7 @@ main.print_invoice_report() displays the table; utils.save_json() writes artifac
 
 
 
-📄 Supported inputs
+## Supported inputs
 
 PDF (multi-page supported)
 
@@ -109,6 +116,6 @@ JPG / JPEG / PNG (single or multi-page image sets as separate files)
 
 
 
-🧩 Extending
+
 
 

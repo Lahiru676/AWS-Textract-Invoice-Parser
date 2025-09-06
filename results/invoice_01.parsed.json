@@ -1,0 +1,210 @@
+[
+  {
+    "invoiceNumber": "123100401",
+    "invoiceDate": "1. März 2024",
+    "total": "453,53 €",
+    "paymentTerms": "Immediate payment without discount. Any bank charges must be paid by the invoice recipient.",
+    "lineItems": [
+      {
+        "description": "Basic Fee wmView",
+        "quantity": "1",
+        "unitPrice": "130.00",
+        "amount": "130,00 €"
+      },
+      {
+        "description": "Basis fee for additional user accounts",
+        "quantity": "0",
+        "unitPrice": null,
+        "amount": "10,00 €"
+      },
+      {
+        "description": "Basic Fee wmPos",
+        "quantity": "0",
+        "unitPrice": null,
+        "amount": "50,00 €"
+      },
+      {
+        "description": "Basic Fee wmGuide",
+        "quantity": "0",
+        "unitPrice": null,
+        "amount": "1.000,00 €"
+      },
+      {
+        "description": "Change of user accounts",
+        "quantity": "0",
+        "unitPrice": null,
+        "amount": "10,00 €"
+      },
+      {
+        "description": "Transaction Fee T1",
+        "quantity": "14",
+        "unitPrice": "0.04",
+        "amount": "0,58 €"
+      },
+      {
+        "description": "Transaction Fee T2",
+        "quantity": "0",
+        "unitPrice": null,
+        "amount": "0,70 €"
+      },
+      {
+        "description": "Transaction Fee T3",
+        "quantity": "162",
+        "unitPrice": "0.01",
+        "amount": "1,50 €"
+      },
+      {
+        "description": "Transaction Fee T4",
+        "quantity": "0",
+        "unitPrice": null,
+        "amount": "0,50 €"
+      },
+      {
+        "description": "Transaction Fee T5",
+        "quantity": "0",
+        "unitPrice": null,
+        "amount": "0,80 €"
+      },
+      {
+        "description": "Transaction Fee T6",
+        "quantity": "0",
+        "unitPrice": null,
+        "amount": "1,80 €"
+      },
+      {
+        "description": "Transaction Fee G1",
+        "quantity": "0",
+        "unitPrice": null,
+        "amount": "0,30 €"
+      },
+      {
+        "description": "Transaction Fee G2",
+        "quantity": "0",
+        "unitPrice": null,
+        "amount": "0,30 €"
+      },
+      {
+        "description": "Transaction Fee G3",
+        "quantity": "0",
+        "unitPrice": null,
+        "amount": "0,40 €"
+      },
+      {
+        "description": "Transaction Fee G4",
+        "quantity": "0",
+        "unitPrice": null,
+        "amount": "0,40 €"
+      },
+      {
+        "description": "Transaction Fee G5",
+        "quantity": "0",
+        "unitPrice": null,
+        "amount": "0,30 € €"
+      },
+      {
+        "description": "Transaction Fee G6",
+        "quantity": "0",
+        "unitPrice": null,
+        "amount": "0,30 €"
+      }
+    ]
+  },
+  {
+    "invoiceNumber": "12345",
+    "invoiceDate": null,
+    "total": "251,12€",
+    "paymentTerms": null,
+    "lineItems": [
+      {
+        "description": "user-account-1",
+        "quantity": null,
+        "unitPrice": "154,30 €",
+        "amount": null
+      },
+      {
+        "description": "user-account-2",
+        "quantity": null,
+        "unitPrice": "96,82 €",
+        "amount": null
+      },
+      {
+        "description": "AZR/31/27439",
+        "quantity": null,
+        "unitPrice": "18,00 €",
+        "amount": null
+      },
+      {
+        "description": "CCL/3715",
+        "quantity": null,
+        "unitPrice": "6,00 €",
+        "amount": null
+      },
+      {
+        "description": "CRS/28432",
+        "quantity": null,
+        "unitPrice": "56,90 €",
+        "amount": null
+      },
+      {
+        "description": "Cs/52113",
+        "quantity": null,
+        "unitPrice": "28,50 €",
+        "amount": null
+      },
+      {
+        "description": "GS 32090",
+        "quantity": null,
+        "unitPrice": "11,08 €",
+        "amount": null
+      },
+      {
+        "description": "Kpi/22695",
+        "quantity": null,
+        "unitPrice": "10,16 €",
+        "amount": null
+      },
+      {
+        "description": "PG 7772",
+        "quantity": null,
+        "unitPrice": "16,50 €",
+        "amount": null
+      },
+      {
+        "description": "Rjn/11138",
+        "quantity": null,
+        "unitPrice": "22,50 €",
+        "amount": null
+      },
+      {
+        "description": "SF-M 596/99-08",
+        "quantity": null,
+        "unitPrice": "7,50 €",
+        "amount": null
+      },
+      {
+        "description": "Ttrb/17885",
+        "quantity": null,
+        "unitPrice": "35,08 €",
+        "amount": null
+      },
+      {
+        "description": "WPN: 24791",
+        "quantity": null,
+        "unitPrice": "6,58 €",
+        "amount": null
+      },
+      {
+        "description": "Wwt/15658",
+        "quantity": null,
+        "unitPrice": "16,50 €",
+        "amount": null
+      },
+      {
+        "description": null,
+        "quantity": null,
+        "unitPrice": "15,82 €",
+        "amount": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "invoiceNumber": "INV-3337",
+  "invoiceDate": "2016-01-25",
+  "paymentTerms": null,
+  "lineItems": [
+    {
+      "description": "Web Design\nThis is a sample description...",
+      "quantity": "1.00",
+      "unitPrice": "85.00",
+      "amount": "85.00"
+    }
+  ],
+  "total": "93.50"
+}

@@ -1,0 +1,14 @@
+{
+  "invoiceNumber": "79702 - 3A",
+  "invoiceDate": "2025-06-13",
+  "paymentTerms": "60 Days",
+  "lineItems": [
+    {
+      "description": "WC 022 CERTIFICATE OF NO RECORDS (CNR) PER FEE SCHEDULE\nNO RECORDS PRODUCED, EXIST, OR HAVE BEEN DESTROYED",
+      "quantity": "1",
+      "unitPrice": "75.00",
+      "amount": "75.00"
+    }
+  ],
+  "total": "75.00"
+}

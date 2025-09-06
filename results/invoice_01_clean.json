@@ -1,0 +1,110 @@
+{
+  "invoiceNumber": "123100401",
+  "invoiceDate": "2024-03-01",
+  "paymentTerms": "Immediate payment without discount. Any bank charges must be paid by the invoice recipient.",
+  "lineItems": [
+    {
+      "description": "Basic Fee wmView",
+      "quantity": "1",
+      "unitPrice": "130.00",
+      "amount": "130.00"
+    },
+    {
+      "description": "Basis fee for additional user accounts",
+      "quantity": "0",
+      "unitPrice": null,
+      "amount": "10.00"
+    },
+    {
+      "description": "Basic Fee wmPos",
+      "quantity": "0",
+      "unitPrice": null,
+      "amount": "50.00"
+    },
+    {
+      "description": "Basic Fee wmGuide",
+      "quantity": "0",
+      "unitPrice": null,
+      "amount": "1000.00"
+    },
+    {
+      "description": "Change of user accounts",
+      "quantity": "0",
+      "unitPrice": null,
+      "amount": "10.00"
+    },
+    {
+      "description": "Transaction Fee T1",
+      "quantity": "14",
+      "unitPrice": "0.04",
+      "amount": "0.58"
+    },
+    {
+      "description": "Transaction Fee T2",
+      "quantity": "0",
+      "unitPrice": null,
+      "amount": "0.70"
+    },
+    {
+      "description": "Transaction Fee T3",
+      "quantity": "162",
+      "unitPrice": "0.01",
+      "amount": "1.50"
+    },
+    {
+      "description": "Transaction Fee T4",
+      "quantity": "0",
+      "unitPrice": null,
+      "amount": "0.50"
+    },
+    {
+      "description": "Transaction Fee T5",
+      "quantity": "0",
+      "unitPrice": null,
+      "amount": "0.80"
+    },
+    {
+      "description": "Transaction Fee T6",
+      "quantity": "0",
+      "unitPrice": null,
+      "amount": "1.80"
+    },
+    {
+      "description": "Transaction Fee G1",
+      "quantity": "0",
+      "unitPrice": null,
+      "amount": "0.30"
+    },
+    {
+      "description": "Transaction Fee G2",
+      "quantity": "0",
+      "unitPrice": null,
+      "amount": "0.30"
+    },
+    {
+      "description": "Transaction Fee G3",
+      "quantity": "0",
+      "unitPrice": null,
+      "amount": "0.40"
+    },
+    {
+      "description": "Transaction Fee G4",
+      "quantity": "0",
+      "unitPrice": null,
+      "amount": "0.40"
+    },
+    {
+      "description": "Transaction Fee G5",
+      "quantity": "0",
+      "unitPrice": null,
+      "amount": "0.30"
+    },
+    {
+      "description": "Transaction Fee G6",
+      "quantity": "0",
+      "unitPrice": null,
+      "amount": "0.30"
+    }
+  ],
+  "total": "453.53"
+}

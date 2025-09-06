@@ -1,0 +1,16 @@
+[
+  {
+    "invoiceNumber": "707b1",
+    "invoiceDate": "October 1, 2024",
+    "total": "$14,597.00",
+    "paymentTerms": null,
+    "lineItems": []
+  },
+  {
+    "invoiceNumber": null,
+    "invoiceDate": null,
+    "total": null,
+    "paymentTerms": null,
+    "lineItems": []
+  }
+]

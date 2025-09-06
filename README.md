@@ -116,6 +116,6 @@ JPG / JPEG / PNG (single or multi-page image sets as separate files)
 
 
 
-![Pipeline diagram](results/Screenshot 2025-09-06 122600.png)
+
 
 
